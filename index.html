@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emilio Ferrara</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<style>
+  :root {
+    color-scheme: light dark;
+    --ground:#FBFAF9; --panel:#FFFFFF; --ink:#17161A; --ink-soft:#55525C;
+    --ink-faint:#8A8691; --rule:#E4E1DE; --accent:#C4432A; --accent-soft:#FBF0ED;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ground:#131215; --panel:#1B1A1F; --ink:#EDEBEF; --ink-soft:#A9A5B0;
+            --ink-faint:#736F7B; --rule:#2C2A31; --accent:#F0785C; --accent-soft:#2A1C19; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--ground); color:var(--ink);
+         font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+         font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:44rem; margin:0 auto; padding:0 1.25rem 5rem; }
+  header { padding:4.5rem 0 2.2rem; border-bottom:1px solid var(--rule); }
+  .tick { width:2.5rem; height:4px; background:var(--accent); border-radius:2px; }
+  h1 { margin:1.1rem 0 0; font-size:clamp(2rem,6vw,2.8rem); font-weight:750; letter-spacing:-.02em; }
+  .role { margin:.7rem 0 0; color:var(--ink-soft); font-size:1.02rem; }
+  .role b { font-weight:650; color:var(--ink); }
+  h2 { margin:2.6rem 0 .9rem; font-size:.78rem; font-weight:700; letter-spacing:.09em;
+       text-transform:uppercase; color:var(--ink-faint); }
+  .cards { display:grid; gap:.7rem; }
+  a.card { display:block; padding:1rem 1.15rem; background:var(--panel);
+           border:1px solid var(--rule); border-radius:10px; text-decoration:none;
+           color:var(--ink); transition:border-color .15s, background .15s; }
+  a.card:hover { border-color:var(--accent); background:var(--accent-soft); }
+  a.card .t { font-weight:650; }
+  a.card .d { margin-top:.15rem; font-size:.9rem; color:var(--ink-soft); }
+  a.card .u { margin-top:.3rem; font-size:.8rem; color:var(--accent); font-weight:600; }
+  footer { margin-top:3rem; padding-top:1.4rem; border-top:1px solid var(--rule);
+           font-size:.85rem; color:var(--ink-faint); }
+  footer a { color:var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tick"></div>
+    <h1>Emilio Ferrara</h1>
+    <p class="role"><b>Professor of Computer Science</b>, University of Southern California<br>
+    Principal Scientist, USC Information Sciences Institute</p>
+    <p class="role">AI safety &amp; auditing · social media manipulation · bots and influence
+    operations · computational social science · network science</p>
+  </header>
+
+  <h2>Main resources</h2>
+  <div class="cards">
+    <a class="card" href="https://www.emilio.ferrara.name/">
+      <div class="t">Personal website</div>
+      <div class="d">Research overview, publications, group, and contact.</div>
+      <div class="u">emilio.ferrara.name</div>
+    </a>
+    <a class="card" href="https://scholar.google.com/citations?user=0r7Syh0AAAAJ">
+      <div class="t">Google Scholar</div>
+      <div class="d">Full publication record and citations.</div>
+      <div class="u">scholar.google.com</div>
+    </a>
+    <a class="card" href="https://github.com/emilioferrara">
+      <div class="t">GitHub</div>
+      <div class="d">Code, datasets, and project repositories.</div>
+      <div class="u">github.com/emilioferrara</div>
+    </a>
+  </div>
+
+  <h2>Talk companions</h2>
+  <div class="cards">
+    <a class="card" href="/bots2agents/">
+      <div class="t">From Bots to Agents — references &amp; BibTeX</div>
+      <div class="d">Companion page for the SICSS-Singapore 2026 closing lecture: every paper
+      cited in the talk, with citation-ready BibTeX and a note on what to cite each for.</div>
+      <div class="u">emilioferrara.github.io/bots2agents</div>
+    </a>
+  </div>
+
+  <footer>
+    emiliofe [at] usc.edu · This page hosts companion material for talks and lectures;
+    the canonical home is <a href="https://www.emilio.ferrara.name/">emilio.ferrara.name</a>.
+  </footer>
+</div>
+</body>
+</html>
